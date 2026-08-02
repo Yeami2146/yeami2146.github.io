@@ -1,2 +1,0 @@
-# gustavokerdole.github.io
-Repository
