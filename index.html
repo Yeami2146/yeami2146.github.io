@@ -3,47 +3,303 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gustavo Kerdole</title>
+    <title>Gustavo Kerdole Gontijo</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        body{
-            max-width:900px;
-            margin:auto;
-            font-family:Arial,sans-serif;
-            padding:40px;
-            line-height:1.6;
-        }
+    <script>
+    MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+    };
+    </script>
 
-        h1{
-            color:#1f4e79;
-        }
-
-        a{
-            color:#005bbb;
-        }
-    </style>
-
+    <script 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
+
 
 <body>
 
-<h1>Gustavo Kerdole</h1>
+<header>
+
+<div class="profile">
+
+    <img src="images/profile.jpg" alt="Gustavo Kerdole">
+
+    <div>
+        <h1>Gustavo Kerdole Gontijo</h1>
+
+        <p class="subtitle">
+            Physics & Quantum Computing
+        </p>
+
+        <nav>
+            <a href="#aboutme">About Me</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="cv/Gustavo_Kerdole_CV_2026.pdf">CV</a>
+            <a href="https://github.com/gustavokerdole">GitHub</a>
+            <a href="https://www.linkedin.com/in/gustavokerdole/">LinkedIn</a>
+        </nav>
+
+        <nav class="languages">
+            <a href="/">EN</a>
+            <a href="/pt/">PT</a>
+            <a href="/fr/">FR</a>
+        </nav>
+    </div>
+
+</div>
+
+</header>
+
+<section id="aboutme">
+
+<h2>About Me</h2>
 
 <p>
-M.Sc. student in Quantum Computing.
+I'm currently in France, pursuing a Master of Science in Engineering (Diplôme d'ingénieur) at Télécom Paris. In September of 2026, I will join the master's program of Institut Polytechnique de Paris in Quantum, Mathematics, and Computer Science (M2 Quantique, Mathématiques, Informatique). My formation in France is a double-degree program with my home university in Brazil, Unicamp, where I have already finished the third year of Bachelor of Science in Physics.
 </p>
+
+<p>
+While at Unicamp, I had the opportunity to do some research projects. In my first year, I studied Fourier Series and its applications to solve differential equations. One year later, I changed the subject to General Relativity, studying blackholes and other aspects of the theory. My last project before coming to France was in the Mathematical Foundations of Quantum Theory Group, under the supervision of professor Marcelo Terra Cunha, focused on 2 qubits systems and "everything" that can be learnt from it, with the idea of exploring multiple concepts of Quantum Theory on such systems.
+</p>
+
+<p>
+I have participated in many schools and events related to Quantum, and I love exploring the different sides of this field. Right now I'm doing a summer internship in Télécom Paris with professor Peter Brown on understanding the role that polynomial optimization can play in the framework of Quantum Singular Value Transformation (QSVT) for constructing quantum algorithms.
+</p>
+
+</section>
+
+<section id="research">
+
+<h2>Research Interests</h2>
+
+<p>
+My research interests lie in quantum computing, with a focus on quantum algorithms, quantum software, and the development of practical quantum technologies. I am particularly interested in variational quantum algorithms, quantum optimization, quantum simulation, and the mathematical foundations of algorithms such as Quantum Singular Value Transformation (QSVT).
+</p>
+
+<p>
+I am also interested in quantum error correction and fault-tolerant quantum computing, as well as the challenges involved in scaling current noisy quantum devices. I have experience developing quantum circuits using Qiskit and PennyLane, working with IBM quantum hardware, variational algorithms, and error mitigation techniques. My applications of interest include optimization, quantum chemistry, financial modeling, and scientific computing.
+</p>
+
+<ul>
+    <li>Quantum algorithms and quantum software</li>
+    <li>Variational quantum algorithms and optimization</li>
+    <li>Quantum Singular Value Transformation (QSVT)</li>
+    <li>Quantum error correction and fault-tolerant quantum computing</li>
+    <li>Quantum simulation and quantum chemistry</li>
+    <li>Superconducting quantum architectures</li>
+</ul>
+
+</section>
+
+
+
+<section id="projects">
 
 <h2>Research Projects</h2>
 
-<ul>
 
-<li>
-<a href="reports/eafexp_superconductors.pdf">
-Synthesis and Characterization of YBCO and V3Si Superconductors
+<div class="project">
+
+<h3>
+Improved quantum algorithm design using polynomial optimization
+</h3>
+
+<p class="date">July 2026 — August 2026</p>
+
+<p>
+This project investigates the application of polynomial optimization techniques, particularly semidefinite programming (SDP), within the framework of the Quantum Singular Value Transformation (QSVT). QSVT provides a unified approach for describing many quantum algorithms, including Grover's algorithm, Shor's algorithm, and Hamiltonian simulation, by reducing algorithm design to the manipulation of quantum-implemented polynomials. The project focuses on understanding how optimized polynomial selection can improve the performance of QSVT-based quantum algorithms, exploring current theoretical developments, extending these techniques to new examples, and analyzing their applications in quantum circuit design. 
+</p>
+
+<nav>
+<a>
+View report soon
 </a>
-</li>
+</nav>
 
-</ul>
+
+</div>
+
+
+<div class="project">
+
+<h3>
+Quantum Energy Advantage in Max-Cut Optimization: A Break-Even Analysis
+</h3>
+
+<p class="date">April 2026 — July 2026</p>
+
+<p>
+This project investigated the potential energy advantage of quantum computing by developing an analytical framework to compare the energy-to-solution scaling of classical, NISQ, and fault-tolerant quantum computing architectures. The work modeled the impact of algorithmic complexity, error mitigation overhead, cryogenic infrastructure, and error correction costs to identify the conditions under which quantum systems could outperform classical approaches in terms of energy efficiency.
+</p>
+
+<nav>
+<a href="reports/quant_energy_adv_report_2026.pdf">
+View report (not final version) →
+</a>
+</nav>
+
+
+</div>
+
+
+<div class="project">
+
+<h3>
+What can be learned from 2 qubits?
+</h3>
+
+<p class="date">August 2024 — July 2025</p>
+
+<p>
+This project explored fundamental concepts in Quantum Information Theory through the study of two-qubit systems and their applications. The project covered the mathematical description of quantum states using density operators and generalized measurements (POVMs), quantum evolution, and quantum channels, including the effects of noise and purification techniques. Key topics in quantum foundations were investigated, including entanglement characterization through Schmidt decomposition, Bell inequalities, and the CHSH scenario. The project also explored quantum algorithms, such as Deutsch's algorithm and the Variational Quantum Eigensolver (VQE), as well as quantum communication protocols including BB84 and E91, providing a broad introduction to the theoretical foundations underlying quantum technologies.
+</p>
+
+<nav>
+<a href="reports/final_report_ic_2025.pdf">
+View final report →
+</a>
+</nav>
+
+
+</div>
+
+
+<div class="project">
+
+<h3>
+Neutron stars and black hole models
+</h3>
+
+<p class="date">August 2023 — July 2024</p>
+
+<p>
+This project focused on the study of black holes and neutron stars within the framework of Einstein's general relativity. The work involved studying spacetime geometry, geodesic motion, tensor calculus, and Einstein's field equations and their solutions. Topics investigated included gravitational waves, stellar models, and black hole physics, with particular emphasis on Hawking radiation and black hole evaporation.
+</p>
+
+<nav>
+<a href="reports/ic_2024/partial_report_ic_2024.pdf">
+View partial report →
+</a>
+
+<a href="reports/ic_2024/final_report_ic_2024.pdf">
+View final report →
+</a>
+</nav>
+
+
+</div>
+
+
+<div class="project">
+
+<h3>
+Fourier series application on the resolution of parcial differential equations of the real world
+</h3>
+
+<p class="date">August 2022 — July 2023</p>
+
+<p>
+This project focused on the study and application of Fourier methods for solving partial differential equations (PDEs). Fourier series were investigated as a mathematical tool to address classical problems in Physics, including heat conduction models. The project also explored theoretical applications of Fourier analysis, including the derivation of important mathematical results such as the isoperimetric inequality.
+</p>
+
+<a href="reports/ic_2023/final_report_ic_2023.pdf">
+View report →
+</a>
+
+</div>
+
+
+</section>
+
+
+<section id="activities">
+
+<h2>Quantum Computing Activities</h2>
+
+<div class="activity">
+
+    <h3>Qiskit Global Summer School</h3>
+    
+    <p class="date">July 2026</p>
+
+    <p>
+    Participated in an advanced hands-on program focused on quantum
+    computing with IBM quantum systems. Completed laboratory exercises
+    on quantum error mitigation, circuit optimization, and the execution
+    of algorithms on current quantum hardware using Qiskit.
+    </p>
+
+    <a href="link-to-code">
+    Code repository (not yet) →
+    </a>
+
+</div>
+
+<div class="activity">
+
+    <h3>ETH Quantum Hackathon</h3>
+    
+    <p class="date">May 2026</p>
+
+    <p>
+    Participated in the ETH Quantum Hackathon (Zurich), working on a problem proposed by QuEra related to the implementation of logical operations in quantum computing architectures. Developed solutions involving quantum circuit design and investigated challenges related to the realization of fault-tolerant quantum operations.
+    </p>
+
+    <a href="link-to-code">
+    Code repository (not yet) →
+    </a>
+
+</div>
+
+<div class="activity">
+
+    <h3>Quantum Computing School</h3>
+    
+    <p class="date">May 2026</p>
+
+    <p>
+    Participated in the Second Quantum Computing School of ICTP-SAIFR (São Paulo), where I had hands-on courses covering basics and advanced concepts on second-generation quantum technologies including: quantum algorithm and quantum simulations, especially applied to chemistry, quantum machine learning, quantum sensors, quantum communication protocols, and different experimental platforms for those technologies, such as superconducting qubits and photonic systems.
+    </p>
+
+    <a href="link-to-code">
+    Code repository (not yet) →
+    </a>
+
+</div>
+
+<div class="activity">
+
+<h3>Advanced School on Experimental Physics: Superconducting Materials</h3>
+
+<p class="date">January 2023</p>
+
+<p>
+Participated in the 7th Advanced School on Experimental Physics of the Brazilian Center for Research in Physics (Rio de Janeiro), where I conducted experimental research on superconducting materials for two weeks, synthesizing YBa$_2$Cu$_3$O$_{7-x}$ and V$_3$Si superconductors using solid-state reaction and arc-melting techniques. Characterized the materials through X-ray diffraction, electrical resistivity, and magnetic susceptibility measurements, investigating superconducting properties including critical temperatures, critical magnetic fields, and phase diagrams.
+
+</p>
+
+<a href="reports/superconductors.pdf">
+View report →
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Contact: gustavokerdole@gmail.com
+</p>
+
+</footer>
+
 
 </body>
+
 </html>
